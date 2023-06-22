@@ -1,7 +1,16 @@
 public class Rehber
 {
     Arayuz arayuz = new Arayuz();
-    public void Goster(Kisi kisiPara) //Kisi türünde ki nesnelerin içeriklerini yazar
+
+    public void Goster(List<Kisi> listePara)
+    {
+        foreach(Kisi item in listePara)
+        {
+            KisiGoster(item);
+        }
+    }
+
+    public void KisiGoster(Kisi kisiPara) //Kisi türünde ki nesnelerin içeriklerini yazar
     {
         System.Console.WriteLine(
             "İsim               : {0}\n" +

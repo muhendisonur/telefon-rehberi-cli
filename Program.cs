@@ -31,10 +31,7 @@ while(true)
         case 4: //rehberi listeleme
             bosluk();
             System.Console.WriteLine("**************** REHBER LISTESI ****************");
-            foreach(Kisi item in rehber)
-            {
-                kontrolcu.Goster(item);
-            }
+            kontrolcu.Goster(rehber);
             bosluk();
             break;
 
